@@ -3,8 +3,7 @@ h1{
 	color: mistyrose;
 	text-shadow: 4px 4px 4px mediumvioletred;
 	font-size: 40px;	
-	
-
+	float: left;
 }
 body{
 
