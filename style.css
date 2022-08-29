@@ -39,3 +39,8 @@ li a:hover:not(.active) {
   background-color: burlywood;
 }
 
+video{
+	float: left;
+	width: 300px;
+	height: 300px;
+}
