@@ -3,6 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body{
+	background-color: black;
+}
 
 .container{
 	display: flex;
@@ -76,6 +79,14 @@ li a {
 li a:hover:not(.active) {
   background-color: burlywood;
 }
-body{
-	background-image: url(pictures/ourtinylittlenest.jpg);
+p{
+	color: whitesmoke;
+	font-family: arial;
+	font-size: 15px;
+}
+audio{
+	padding: 15px;
+}
+video{
+	width: 80%;
 }

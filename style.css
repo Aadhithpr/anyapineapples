@@ -9,6 +9,7 @@ body{
    background-repeat: no-repeat;
    height: 100vh;
    background-position: absolute;
+   background-attachment: fixed;
 }
 ul{
 	list-style-type: none;
