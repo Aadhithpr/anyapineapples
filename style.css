@@ -7,8 +7,8 @@ body{
 	 background-image: url(pictures/ourtinylittlenest.png);
    background-size: cover;
    background-repeat: no-repeat;
-   height: 100vh;
-   background-position: absolute;
+   height: 100%;
+   background-position: center;
    background-attachment: fixed;
 }
 ul{
@@ -37,4 +37,11 @@ li a {
 
 li a:hover:not(.active) {
   background-color: burlywood;
+}
+
+@media only screen and (min-width: 400px){
+  .home{
+    width: 100%;
+
+  }
 }
