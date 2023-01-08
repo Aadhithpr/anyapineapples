@@ -1,0 +1,123 @@
+body{
+  background-color: black;
+}
+/* Style the container */
+.six-column-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+/* Style the gallery items */
+.six-column-item {
+  width: 16.66%;
+  height: 200px;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: all 0.4s ease;
+  padding: 3px 3px 3px 3px;
+}
+
+/* Style the image */
+.six-column-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+  border-radius: 10px;
+
+}
+.six-column-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+  border-radius: 10px;
+
+}
+
+/* Style the hover effect */
+.six-column-item:hover {
+  transform: scale(1.1);
+}
+
+.six-column-item:hover img {
+  transform: scale(1.2);
+  filter: brightness(110%);
+  border-radius: 5px;
+}
+
+/* Style the caption */
+.six-column-item .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.75));
+  color: rebeccapurple;
+  padding: 20px;
+  text-align: center;
+  height: 50%;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.six-column-item:hover .caption {
+  height: 50%;
+  opacity: 1;
+}
+
+/* Media queries to make the gallery responsive */
+@media (max-width: 1200px) {
+  .six-column-item {
+    width: 25%;
+  }
+}
+
+@media (max-width: 900px) {
+  .six-column-item {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 600px) {
+  .six-column-item {
+    width: 50%;
+  }
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: cursive;
+}
+
+li {
+  list-style-type: none;
+  float: right;
+}
+
+li a {
+  display: inline-block;
+  font-family:arial ;
+  text-shadow: 0 0 2px;
+  color: antiquewhite;
+  text-align: right;
+  font-size: 15px;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: burlywood;
+}
+p{
+  color: whitesmoke;
+  font-family: arial;
+  font-size: 15px;
+}
